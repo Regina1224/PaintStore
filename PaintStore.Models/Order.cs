@@ -15,7 +15,7 @@ public class Order
     // A order can have multiple PaintProducts N:N
     public List<PaintProduct> PaintProducts { get; set; }
 
-    public Order(int id, decimal totalPrice, int userId)
+    public Order(int id, int userId, decimal totalPrice)
     {
         Id = id;
         CreatedDate = DateTime.Now;
